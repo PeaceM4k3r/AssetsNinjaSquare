@@ -22,7 +22,7 @@ public class MovingObject : MonoBehaviour
     {
         //move from A to B
         objectToMove.transform.position = Vector3.MoveTowards(objectToMove.transform.position, currentTarget, speedMove * Time.deltaTime);
-
+        //objectToMove.transform.position = Vector3.MoveTowards(objectToMove.transform.position, currentTarget, speedMove);
         //update currentTarget
         if (objectToMove.transform.position == endPoint.position)
         {
