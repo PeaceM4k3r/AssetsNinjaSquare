@@ -24,6 +24,12 @@ public class PlayerController : MonoBehaviour
     //LevelManager
     public LevelManager theLevelManager;
 
+    //Attacks
+
+    //Shuriken
+    public GameObject shurikenattack;
+
+
 
     // Start is called before the first frame update
     void Start()

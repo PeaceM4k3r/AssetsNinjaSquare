@@ -31,6 +31,7 @@ public class LevelManager : MonoBehaviour
     {
         StartCoroutine("RespawnCo");
     }
+
     public IEnumerator RespawnCo()
     {
         thePlayer.gameObject.SetActive(false);
