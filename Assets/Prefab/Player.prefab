@@ -59,7 +59,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5316617395245751359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5276814, y: -1.8364154, z: 0}
+  m_LocalPosition: {x: -7.326, y: -2.2380192, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 948077922}
@@ -147,11 +147,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 5316617395245751359}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d6c0b27ce6a32ba4c9c8360f3ac819ac, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.037672043, y: -0.007252425}
+  m_Offset: {x: 0.0401268, y: -0.0023428798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50544167, y: 0.4794572}
+  m_Size: {x: 0.5103512, y: 0.4892763}
   m_EdgeRadius: 0
 --- !u!114 &1358160170
 MonoBehaviour:
@@ -178,13 +178,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMovement: 5
   jumpForce: 5
-  isGrounded: 0
+  isGrounded: 1
+  doubleJump: 1
   groundCheck: {fileID: 948077922}
   groundCheckRadius: 0.2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  thisAnimator: {fileID: 0}
+  respawnCoords: {x: -7.326, y: -2.181}
+  thisAnimator: {fileID: 1358160173}
+  theLevelManager: {fileID: 0}
 --- !u!95 &1358160173
 Animator:
   serializedVersion: 3
