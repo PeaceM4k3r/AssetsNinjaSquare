@@ -20,14 +20,15 @@ public class PlayerController : MonoBehaviour
     //Respawn
     public Vector2 respawnCoords;
     //Animations
-    public Animator thisAnimator;
+    private Animator thisAnimator;
     //LevelManager
-    public LevelManager theLevelManager;
+    private LevelManager theLevelManager;
 
     //Attacks
 
     //Shuriken
-    public GameObject shurikenattack;
+    public GameObject shurikenLeft;
+    public GameObject shurikenRight;
 
 
 
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
         thisAnimator = GetComponent<Animator>();
         //LevelManager
         theLevelManager = FindObjectOfType<LevelManager>();
+
 
     }
 
@@ -90,6 +92,21 @@ public class PlayerController : MonoBehaviour
             doubleJump = false;
         }
 
+
+
+
+
+        if (Input.GetButtonDown("Fire1") && transform.localScale.x == 1)
+        {
+            Instantiate(shurikenRight, transform.position, transform.rotation);
+        }
+        if (Input.GetButtonDown("Fire1") && transform.localScale.x == -1)
+        {
+            //bulletOrigin = new Vector3(transform.position.x - 0.6f, transform.position.y,transform.position.z);
+            Instantiate(shurikenLeft, transform.position, transform.rotation);
+        }
+
+
         //AnimatorTransitionsParameters
         thisAnimator.SetFloat("moveSpeed", Mathf.Abs(thisRigidBody2D.velocity.x));
         thisAnimator.SetBool("isGrounded", isGrounded);
@@ -100,7 +117,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "KillZone")
         {
-            theLevelManager.respawnPlayer();
+            theLevelManager.HurtPlayer(6);
         }
         if(collision.gameObject.tag == "CheckPoints")
         {

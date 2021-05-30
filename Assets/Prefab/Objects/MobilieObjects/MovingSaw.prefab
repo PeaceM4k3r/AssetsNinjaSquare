@@ -102,7 +102,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1050156893
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -440483645330747999, guid: a2969aef61693bc4ab4ae3a8d078f9ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -162,7 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44435c52adfed8a43950ab6e16300dea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theLevelManager: {fileID: 0}
   damageToDo: 1
 --- !u!1 &7660627613967215682
 GameObject:
@@ -188,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7660627613967215682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.18, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2613927721117412604}
@@ -243,5 +242,4 @@ MonoBehaviour:
   objectToMove: {fileID: 3068796114388944546}
   startPoint: {fileID: 1507841762307339950}
   endPoint: {fileID: 6088825560091140145}
-  currentTarget: {x: 0, y: 0, z: 0}
   speedMove: 5

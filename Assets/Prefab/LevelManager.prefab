@@ -44,4 +44,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitToRespawn: 2
-  thePlayer: {fileID: 0}
+  maxHp: 6
+  currentHp: 0
+  deadParticleEffect: {fileID: 4460994549672074083, guid: 7c1827593d12c754b97f838f6febfff3, type: 3}
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
+  hFull: {fileID: -8405058192176592724, guid: a2969aef61693bc4ab4ae3a8d078f9ff, type: 3}
+  hHalf: {fileID: -2468590777915931304, guid: a2969aef61693bc4ab4ae3a8d078f9ff, type: 3}
+  hEmpty: {fileID: -4371761223435045764, guid: a2969aef61693bc4ab4ae3a8d078f9ff, type: 3}

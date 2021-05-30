@@ -104,7 +104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 617735273
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5977509345718734206, guid: 0fa7eb74be01d864b93c8d0355eb1cbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -147,11 +147,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 5316617395245751359}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d6c0b27ce6a32ba4c9c8360f3ac819ac, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.037672043, y: -0.007252425}
+  m_Offset: {x: 0.0401268, y: -0.0023428798}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -162,7 +162,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50544167, y: 0.4794572}
+  m_Size: {x: 0.5103512, y: 0.4892763}
   m_EdgeRadius: 0
 --- !u!114 &1358160170
 MonoBehaviour:
@@ -186,8 +186,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   respawnCoords: {x: 0, y: 0}
-  thisAnimator: {fileID: 0}
-  theLevelManager: {fileID: 0}
+  shurikenLeft: {fileID: 7361001887326510217, guid: 50faf22aad81dd7469d26b5f9578cc50, type: 3}
+  shurikenRight: {fileID: 3832968942973382124, guid: 6409bcb731180b348aa0719114b36352, type: 3}
 --- !u!95 &1358160173
 Animator:
   serializedVersion: 3
