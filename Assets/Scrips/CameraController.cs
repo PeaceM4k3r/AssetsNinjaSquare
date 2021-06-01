@@ -19,22 +19,40 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
+        /*
+                targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
 
 
-        if (target.transform.localScale.x > 0f) // Right
+                if (target.transform.localScale.x > 0f) // Right
+                {
+                    targetPosition = new Vector3(targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
+
+                }
+                else //  Left
+                {
+                    targetPosition = new Vector3(targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
+                }
+
+                transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+        */
+
+
+        if (transform.position.y >=0)
         {
-            targetPosition = new Vector3(targetPosition.x + followAhead, targetPosition.y, targetPosition.z);
-
+            targetPosition = new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z);
         }
-        else //  Left
+        else
         {
-            targetPosition = new Vector3(targetPosition.x - followAhead, targetPosition.y, targetPosition.z);
+            targetPosition = new Vector3(target.transform.position.x, transform.position.y, transform.position.z);
         }
+        
+        
+        
+        
+        
+        transform.position = targetPosition;
 
-        //transform.position = targetPosition;
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
     }
 
 
