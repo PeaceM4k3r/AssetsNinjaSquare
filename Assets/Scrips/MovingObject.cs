@@ -7,7 +7,7 @@ public class MovingObject : MonoBehaviour
     public GameObject objectToMove;
     public Transform startPoint;
     public Transform endPoint;
-    public Vector3 currentTarget;
+    private Vector3 currentTarget;
     public float speedMove;
 
 
@@ -22,8 +22,6 @@ public class MovingObject : MonoBehaviour
     {
         //move from A to B
         objectToMove.transform.position = Vector3.MoveTowards(objectToMove.transform.position, currentTarget, speedMove * Time.deltaTime);
-
-        //update currentTarget
         if (objectToMove.transform.position == endPoint.position)
         {
             currentTarget = startPoint.position;
