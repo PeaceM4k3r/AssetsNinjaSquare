@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2483270008907781054}
   - component: {fileID: 7741641874186885682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5579915757683868412}
   - component: {fileID: 8482448778638346262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3335636331251987314}
   - component: {fileID: 8062055648836289889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5731713621186968705}
   - component: {fileID: 6567684957370631298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3061062304860373331}
   - component: {fileID: 949899902768204813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6014702992566693560}
   - component: {fileID: 7095302176215825823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_18 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297332266621601}
   - component: {fileID: 8736297332266621600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297332408310012}
   - component: {fileID: 8736297332408310011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297332559052212}
   - component: {fileID: 8736297332559052213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.118068695, y: 0.027246475}
+  m_Offset: {x: 2.9022741, y: 0.027246475}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -724,7 +724,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.486614, y: 1.054493}
+  m_Size: {x: 11.055025, y: 1.054493}
   m_EdgeRadius: 0
 --- !u!1 &8736297332826275512
 GameObject:
@@ -736,7 +736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297332826275463}
   - component: {fileID: 8736297332826275462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297333038246544}
   - component: {fileID: 8736297333038246559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297333394176566}
   - component: {fileID: 8736297333394176565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297333779205320}
   - component: {fileID: 8736297333779205335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8736297333801009002}
   - component: {fileID: 8736297333801009001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Map_18 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

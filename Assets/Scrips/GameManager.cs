@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {                                                                                  // este numero representa la cantidad de frame en el eje x moviendose en la unidad de unity                
-        fondo.material.mainTextureOffset= fondo.material.mainTextureOffset + new Vector2(0.050f,0) * Time.deltaTime;
+        fondo.material.mainTextureOffset= fondo.material.mainTextureOffset + new Vector2(0.015f,0) * Time.deltaTime;
     }
 }
