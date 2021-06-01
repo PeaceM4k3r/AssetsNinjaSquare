@@ -204,6 +204,7 @@ MonoBehaviour:
   startRoute: {fileID: 5130058183206365698}
   endRoute: {fileID: 5130058182868438790}
   Enemy: {fileID: 5130058182328779636}
+  noDmgFrame: 0
   moveSpeed: 2
   maxHP: 6
   currentHP: 0

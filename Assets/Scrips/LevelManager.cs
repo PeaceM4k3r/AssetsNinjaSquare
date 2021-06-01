@@ -25,9 +25,8 @@ public class LevelManager : MonoBehaviour
     public Sprite hHalf;
     public Sprite hEmpty;
 
-
-
-
+    public bool takenDMG = false;
+    public int invTime = 1;
 
 
 
@@ -64,6 +63,16 @@ public class LevelManager : MonoBehaviour
         hpUpdate();
         thePlayer.gameObject.SetActive(true);
         //Debug.Log("HP: " + currentHp + "/" + maxHp);
+    }
+    public IEnumerator invencibilityFrames()
+    {
+
+        takenDMG = true;
+
+        yield return new WaitForSeconds(invTime);
+
+        takenDMG = false;
+
     }
 
     public void HurtPlayer(int damageToTake)

@@ -7,10 +7,13 @@ public class HurtPlayer : MonoBehaviour
     private LevelManager theLevelManager;
     public int damageToDo;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
         theLevelManager = FindObjectOfType<LevelManager>();
+
     }
 
     // Update is called once per frame
@@ -25,5 +28,7 @@ public class HurtPlayer : MonoBehaviour
         {
             theLevelManager.HurtPlayer(damageToDo);
         }
+        
     }
+
 }
