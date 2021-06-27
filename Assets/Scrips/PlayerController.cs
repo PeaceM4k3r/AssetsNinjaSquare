@@ -115,11 +115,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "KillZone")
+        if (collision.gameObject.CompareTag("KillZone"))
         {
             theLevelManager.HurtPlayer(6);
         }
-        if(collision.gameObject.tag == "CheckPoints")
+        if(collision.gameObject.CompareTag("CheckPoints"))
         {
             respawnCoords = collision.transform.position;
         }
@@ -127,14 +127,14 @@ public class PlayerController : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "MovingPlatforms")
+        if(collision.gameObject.CompareTag("MovingPlatforms"))
         {
             transform.parent = collision.transform;
         }
     }
     public void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "MovingPlatforms")
+        if (collision.gameObject.CompareTag("MovingPlatforms"))
         {
             transform.parent = null;
         }
