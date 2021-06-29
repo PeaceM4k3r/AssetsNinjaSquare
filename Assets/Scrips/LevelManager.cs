@@ -129,7 +129,11 @@ public class LevelManager : MonoBehaviour
             Heart2.sprite = hFull;
             Heart3.sprite = hFull;
         }
+        if (currentHp > 6)
+        {
+            currentHp = 6;
 
+        }
     }
 
 
