@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5130058182328779639}
   - component: {fileID: 8365989478483781586}
   - component: {fileID: 934974243}
+  - component: {fileID: 509317891}
+  - component: {fileID: 509317898}
   m_Layer: 11
   m_Name: Boar
   m_TagString: Enemies
@@ -136,7 +138,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.012081037, y: -0.06970428}
@@ -155,6 +157,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToDo: 3
+--- !u!61 &509317891
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130058182328779636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.029225439, y: -0.2191906}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.67, y: 0.44}
+    newSize: {x: 0.67, y: 0.44}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2808445, y: 0.010697365}
+  m_EdgeRadius: 0
+--- !u!114 &509317898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130058182328779636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5bc3a638029b514d82909f870828377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startRoute: {fileID: 5130058183206365698}
+  endRoute: {fileID: 5130058182868438790}
+  takenDMG: 0
+  moveSpeed: 2
+  maxHP: 3
+  currentHP: 0
+  invTime: 1
 --- !u!1 &5130058182534301095
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,10 +211,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5130058182534301113}
-  - component: {fileID: 5130058182534301094}
   m_Layer: 11
   m_Name: EnemyBoar
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -189,25 +235,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5130058182534301094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5130058182534301095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5bc3a638029b514d82909f870828377, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startRoute: {fileID: 5130058183206365698}
-  endRoute: {fileID: 5130058182868438790}
-  Enemy: {fileID: 5130058182328779636}
-  noDmgFrame: 0
-  moveSpeed: 2
-  maxHP: 6
-  currentHP: 0
 --- !u!1 &5130058182868438791
 GameObject:
   m_ObjectHideFlags: 0
