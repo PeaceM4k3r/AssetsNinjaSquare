@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     public GameObject shurikenLeft;
     public GameObject shurikenRight;
 
+    [SerializeField]
+    private bool shurikenCD;
 
 
     // Start is called before the first frame update
@@ -50,7 +52,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Controllers();
+    }
 
+
+
+    public IEnumerator ShurikenCDCo()
+    {
+
+        yield return new WaitForSeconds(0.4f);
+        shurikenCD = false;
+    }
+
+    void PlayerMovement()
+    {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         if (isGrounded)
         {
@@ -91,23 +106,38 @@ public class PlayerController : MonoBehaviour
             thisRigidBody2D.velocity = new Vector2(thisRigidBody2D.velocity.x, jumpForce);
             doubleJump = false;
         }
+    }
 
-
-
-
-
-        if (Input.GetButtonDown("Fire1") && transform.localScale.x == 1)
+    void PlayerAttacks()
+    {
+        if (!shurikenCD)
         {
-            Instantiate(shurikenRight, transform.position, transform.rotation);
+            if (Input.GetButtonDown("Fire1") && transform.localScale.x == 1)
+            {
+                Instantiate(shurikenRight, transform.position, transform.rotation);
+                shurikenCD = true;
+                StartCoroutine("ShurikenCDCo");
+            }
+            if (Input.GetButtonDown("Fire1") && transform.localScale.x == -1)
+            {
+                //bulletOrigin = new Vector3(transform.position.x - 0.6f, transform.position.y,transform.position.z);
+                Instantiate(shurikenLeft, transform.position, transform.rotation);
+                shurikenCD = true;
+            }
         }
-        if (Input.GetButtonDown("Fire1") && transform.localScale.x == -1)
-        {
-            //bulletOrigin = new Vector3(transform.position.x - 0.6f, transform.position.y,transform.position.z);
-            Instantiate(shurikenLeft, transform.position, transform.rotation);
-        }
+    }
+
+    void Controllers()
+    {
+
+        PlayerMovement();
+
+        PlayerAttacks();
 
 
-        //AnimatorTransitionsParameters
+
+
+        //Control de animaciones
         thisAnimator.SetFloat("moveSpeed", Mathf.Abs(thisRigidBody2D.velocity.x));
         thisAnimator.SetBool("isGrounded", isGrounded);
 

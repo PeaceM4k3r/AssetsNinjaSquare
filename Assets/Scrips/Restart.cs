@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    Scene level1;
+    
+
+
     public void RestartLevel()
     {
-        SceneManager.LoadScene("TestLevel");
+        SceneManager.LoadScene("Dungeon platt");
         if (Time.timeScale == 0)
         {
             Time.timeScale = 1;
